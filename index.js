@@ -1,8 +1,8 @@
-const app = require('./src/app');
+const server = require('./src/app');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.SERVER_PORT || 3001;
 const HOST = process.env.HOST || 'http://localhost';
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`🚀Server on → ${HOST}:${PORT}`);
 });
