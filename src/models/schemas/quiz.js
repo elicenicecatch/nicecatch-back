@@ -8,7 +8,6 @@ const QuizSchema = new Schema(
     },
     image: {
       type: String,
-      required: true,
     },
   },
   {
